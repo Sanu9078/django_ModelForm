@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <body>
+    <center>
+        <h2>Welcome Access Page</h2>
+        <form method="post">
+          {% csrf_token %}
+          {{AO.as_p}}
+          <input type="submit" value="Insert Access">
+        </form>
+    </center>
+  </body>
+</html>
